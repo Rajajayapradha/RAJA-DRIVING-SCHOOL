@@ -82,6 +82,15 @@ z{
     font: bolder;
     font-size: 20px;
     color: #88bdbc;
+    margin-top: -100px;
+    line-height: 20px;
+}
+
+y{
+    font: bolder;
+    font-size: 20px;
+    color: #88bdbc;
+    line-height: 20px;
 }
 o{
     font-size: 25px;
@@ -234,7 +243,7 @@ o{
     font-size: 16px;
     margin-top: 10px;
     font: 600;
-    color: #f646ed;
+    color: #6e2525;
 }
 
 /* Input styles */
@@ -333,5 +342,16 @@ footer {
     .drop-menu{
         grid-template-columns: 100%;
         padding: 0px;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
